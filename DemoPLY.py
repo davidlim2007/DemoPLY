@@ -122,7 +122,7 @@ def t_COMMENT(t):
     ##
     ## Also see PLY documentation 4.5 Discarded tokens
     ##
-    r'[\#\#|//].*'  
+    r'(//.*)|(\#\#.*)'  
     print("Single line comment : [" + t.value + "] Length : " + str(len(t.value)))
     pass
     ## No return value. Token discarded.
